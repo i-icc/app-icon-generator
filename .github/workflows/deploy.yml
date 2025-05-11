@@ -18,7 +18,7 @@ jobs:
       - run: corepack prepare yarn@4.9.1 --activate
 
       - run: yarn install
-      - run: yarn build && yarn export
+      - run: yarn build
       - run: touch out/.nojekyll
 
       - name: Deploy
