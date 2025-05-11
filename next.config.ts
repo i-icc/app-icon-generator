@@ -1,8 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  images: { unoptimized: true },
+  basePath: '/app-icon-generator', // ← リポジトリ名に変更
 };
 
-export default nextConfig;
+module.exports = nextConfig;
